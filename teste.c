@@ -1,13 +1,13 @@
 // *******************************************************************
-// Exemplo de utilização srand - 2019/1
-// Laboratório de Programação
+// Exemplo de utilizaï¿½ï¿½o srand - 2019/1
+// Laboratï¿½rio de Programaï¿½ï¿½o
 // *******************************************************************
 
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
 #include<locale.h>
-#include<time.h>     // bibiioteca necessária para utilizar o time(NULL)
+#include<time.h>     // bibiioteca necessï¿½ria para utilizar o time(NULL)
  
 int x, i;
 int main()
@@ -16,7 +16,7 @@ int main()
       srand((unsigned)time(NULL));             // o srand serve pra criar uma nova "semente" pra gerar os nros na rand(), senao a sequencia gerada seria sempre a mesma
       for (i=1;i<=10;i++){
             x = rand() % 10;
-            printf("Valor aleatório gerado: %d \n", x); 
+            printf("Valor aleatÃ³rio gerado: %d \n", x); 
             getch();
       }
 }
