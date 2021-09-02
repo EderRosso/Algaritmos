@@ -1,7 +1,9 @@
+// Faça um programa que receba duas notas, calcule e mostre a média ponderada dessas notas, consi-
+// derando peso 2 para a primeira e peso 3 para a segunda.
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
-#include <conio.h>
+
 
 #define p1 4
 #define p2 6
@@ -9,8 +11,6 @@
 int main()
 {
     float n1, n2, m;
-
-    setlocale(LC_ALL, "Portuguese");
 
     printf("\tInsira o valor das notas\n");
     scanf("%f%*c %f%*c",&n1 , &n2);
