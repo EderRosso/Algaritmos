@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 
-#define des 10
+#define des 10.00
 
 int main(int argc, char const *argv[])
 {

@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 {
     float p, npg, npm;
 
-    printf("\tInsira o seu peso  ");
+    printf("\tInsira o seu peso ");
     scanf("%f", &p);
 
     npg = (p * gorda / 100);

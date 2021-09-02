@@ -5,8 +5,8 @@
 #include <stdlib.h>
 
 
-#define p1 4
-#define p2 6
+#define p1 2
+#define p2 3
 
 int main()
 {

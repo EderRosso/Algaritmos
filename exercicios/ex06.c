@@ -4,7 +4,7 @@
 
 
 #include <stdio.h>
-#define cm 4
+#define cm 4.00
 
 int main(int argc, char const *argv[])
 {
