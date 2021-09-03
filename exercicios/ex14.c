@@ -7,7 +7,7 @@
 #include<stdio.h>
 #include<locale.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
     setlocale(LC_ALL, "Portuguese");
     int id, ano, anoAt, meses, dias, semanas;
@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     meses = id * 12;
     semanas = meses * 7;
 
-    printf("\nSua idade é = %d anos, \nquantidade de meses = %d meses, \nquantidade de semanas = %d semanas \nquantidade de dias = %d dias \n", id, meses, semanas, dias);
+    printf("\nSua idade é = %d anos, \nQuantidade de meses = %d meses, \nQuantidade de semanas = %d semanas \nQuantidade de dias = %d dias \n", id, meses, semanas, dias);
 
     return 0;
 }
