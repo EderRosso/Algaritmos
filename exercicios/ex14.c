@@ -7,16 +7,22 @@
 #include<stdio.h>
 #include<locale.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
+    setlocale(LC_ALL, "Portuguese");
     int id, ano, anoAt, meses, dias, semanas;
 
-    printf("Insira o ano de nascimento ");
+    printf("Insira o ano de nascimento: ");
     scanf("%d%*c", &ano);
-    printf("Insira o ano atual ");
+    printf("\t\nInsira o ano atual: ");
     scanf("%d%*c", &anoAt);
 
-    id = ;
+    id = anoAt - ano;
+    dias = id * 365;
+    meses = id * 12;
+    semanas = meses * 7;
+
+    printf("\nSua idade é = %d anos, \nQuantidade de meses = %d meses, \nQuantidade de semanas = %d semanas \nQuantidade de dias = %d dias \n", id, meses, semanas, dias);
 
     return 0;
 }
