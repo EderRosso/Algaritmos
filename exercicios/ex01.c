@@ -15,5 +15,4 @@ int main()
     printf("valor da subtracao: %d", sub);
 
     return 0;
-
 }
