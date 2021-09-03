@@ -20,8 +20,9 @@ int main(int argc, char const *argv[])
     id = anoAt - ano;
     dias = id * 365;
     meses = id * 12;
+    semanas = meses * 7;
 
-    printf("\nSua idade é = %d anos, \nquantidade de meses = %d meses, \nquantidade de dias = %d dias \n", id, meses, dias);
+    printf("\nSua idade é = %d anos, \nquantidade de meses = %d meses, \nquantidade de semanas = %d semanas \nquantidade de dias = %d dias \n", id, meses, semanas, dias);
 
     return 0;
 }
