@@ -9,14 +9,19 @@
 
 int main(int argc, char const *argv[])
 {
+    setlocale(LC_ALL, "Portuguese");
     int id, ano, anoAt, meses, dias, semanas;
 
-    printf("Insira o ano de nascimento ");
+    printf("Insira o ano de nascimento: ");
     scanf("%d%*c", &ano);
-    printf("Insira o ano atual ");
+    printf("\t\nInsira o ano atual: ");
     scanf("%d%*c", &anoAt);
 
-    id = ;
+    id = anoAt - ano;
+    dias = id * 365;
+    meses = id * 12;
+
+    printf("\nSua idade é = %d anos, \nquantidade de meses = %d meses, \nquantidade de dias = %d dias \n", id, meses, dias);
 
     return 0;
 }
