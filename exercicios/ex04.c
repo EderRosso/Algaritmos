@@ -20,4 +20,5 @@ int main()
     printf("\tA média ponderada é: %.2f\n", m);
 
     return 0;
+    
 }

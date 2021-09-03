@@ -11,5 +11,7 @@ int main(int argc, char const *argv[])
 
     mul = n1 * n2 * n3;
     printf("Multiplicacao = %d", mul);
+    
     return 0;
+
 }

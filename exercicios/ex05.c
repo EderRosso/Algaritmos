@@ -19,4 +19,5 @@ int main(int argc, char const *argv[])
     printf("\tValor de desconto = %.2f\n", v2);
     printf("\tValor final = %.2f\n", vd);
     return 0;
+    
 }
