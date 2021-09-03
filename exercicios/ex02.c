@@ -14,5 +14,5 @@ int main(int argc, char const *argv[])
     printf("Multiplicacao = %d", mul);
 
     return 0;
-
+    
 }
