@@ -16,11 +16,11 @@ int main()
     printf("\tInsira outro valor:  ");
     scanf("%d%*c", &n2);
 
-    if(n1 == n2) printf("\tOs valores %d e %d são iguais", n1, n2);
+    if(n1 == n2) printf("\tOs valores %d e %d são iguais\n", n1, n2);
 
-    if(n1 > n2) printf("\tO valor %d é maior que %d", n1, n2);
+    if(n1 > n2) printf("\tO valor %d é maior que %d\n", n1, n2);
 
-    if(n2 > n1) printf("\tO valor %d é maior que %d", n2, n1);
+    if(n2 > n1) printf("\tO valor %d é maior que %d\n", n2, n1);
 
     return 0;
 }
