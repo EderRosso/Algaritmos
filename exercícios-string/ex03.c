@@ -12,26 +12,34 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    char str[60], c;
-    int q = 0;
-
-    printf("Insira uma frase: ");
-    gets(str);
-    // fflush(stdin);
-
-    printf("Insira um caractere: ");
-    c = getchar();
-
-    for(int i=0; i < strlen(str); i++){
-	    if(strcmpi(str[i], c) == 0){
-		    q = q + 1;
-        }else{
-            printf("ERRO");
-        }
-
-    }
+    char str[129], c;
+    int q = 0, tam = 0;
+  
     
-    printf("\nA letra %s se repete: %i", c, q);
+
+    printf("Insira uma frase:");
+    gets(str);
+
+    strlwr(str);
+    fflush(stdin);
+
+    printf("Insira um caractere:");
+    scanf("%c",&c);
+        
+    tam = strlen(str);        // Conta  a quantidade de letras
+    printf("Letras %i\n",tam); 
+
+    for (int i = 0; i < strlen(str); i++){      //Conta a quantidade de letras para o for percorrer
+        if (str[i] == c){       //Se as letras forem iguais
+            q++;
+            
+            }
+    }
+    printf("\nA letra -%c- aparece %i", c, q);
+    
+      
+    
+    
 
 
 
