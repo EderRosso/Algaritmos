@@ -38,17 +38,18 @@ int main()
         switch(op)
         {
             case 1:
+                system("cls || clear");
                 ordenar();
-                system("pause");
+                
                 break;
 
             case 2:
                 sub();
                 break;
 
-            case 3:                
-                sair();
-                op = 0;
+            case 3:
+                printf("Saindo....");
+                exit(0);
                 break;
 
             default:
@@ -61,15 +62,12 @@ int main()
 void ordenar(){
     printf("Ordenar....\n");
     printf("Insira um palavra: ");
+    // 
+    
 
 }
 
 void sub(){
     printf("substituição....");
 
-}
-
-void sair(){
-    printf("Saindo....");
-    
 }
