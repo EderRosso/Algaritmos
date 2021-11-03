@@ -48,7 +48,7 @@ int main()
                 break;
 
             default:
-                printf("Digite uma opç?o valida!!!\n");
+                printf("\tDigite uma opç?o valida!!!\n");
                 sleep(5);
                 system("cls || clear");
                 op = main();
@@ -56,10 +56,9 @@ int main()
     } while(op);
 }
 
-
 int menu(){
     int op = 0;
-    printf("\n\tAp2 - Éder Oliveira de Rosso\n\n");
+    printf("\n\tAp2 - ?der Oliveira de Rosso\n\n");
     printf("\t1. ORDENAR\n");
     printf("\t2. SUBSTITUIR\n");
     printf("\t3. ENCERRAR\n");
