@@ -9,7 +9,7 @@
 // Opção 1: ler uma palavra (de no máximo 50 caracteres), o programa deverá  e apresentar a palavra com as letras ordenadas em ordem alfabética. Por exemplo, para a String RAMON LUMMERTZ, o resultado será: AELMMMNORRTZ
 // Opção 2: faz a leitura de um texto livre (de no máximo 50 caracteres) e substitui escrevendo todos os espaços em branco do texto livre por underline( _ ), além disso, deverá inverter a ordem do texto. Por exemplo, para a string "O TRABALHO E FACIL", será: LICAF_E_OHLABART_O
 
-// DEFINI??ES DE BIBLIOT?CAS 
+// DEFINIÇÕES DE BIBLIOTECAS 
 #include<stdio.h>
 #include<locale.h>
 #include<stdlib.h>
@@ -18,12 +18,12 @@
 // DEFINE O TAMANHO DAS STRINGS 
 #define tam 50
 
-// PROT?TIPO DAS FUN??ES 
+// PROTOTIPO DAS FUNÇÕES 
 int menu();
 void ordenar();
 void sub();
 
-// FUN??O PRINCIPAL
+// FUNÇÃO PRINCIPAL
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
@@ -48,22 +48,22 @@ int main()
                 break;
 
             default:
-                printf("\tDigite uma opç?o valida!!!\n");
+                printf("\tDigite uma opção valida!!!\n");
                 sleep(5);
                 system("cls || clear");
                 op = main();
-       }
+        }
     } while(op);
 }
 
 int menu(){
     int op = 0;
-    printf("\n\tAp2 - ?der Oliveira de Rosso\n\n");
+    printf("\n\tAp2 - Éder Oliveira de Rosso\n\n");
     printf("\t1. ORDENAR\n");
     printf("\t2. SUBSTITUIR\n");
     printf("\t3. ENCERRAR\n");
     printf("\n");
-    printf("\tEscolha a opç?o: ");
+    printf("\tEscolha a opção: ");
     scanf("%d", &op);
     system("cls || clear");
     return op;
@@ -105,7 +105,7 @@ void sub(){
     n = strlen(str);
     j = n - 1;
     for( i = 0; i <= strlen(str); i++){  //  TROCA O ESPA?O EM BRANCO POR UNDERLINE(_)
-         if(str[i] == ' '){
+        if(str[i] == ' '){
             str[i] = '_';
         }        
     }
