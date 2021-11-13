@@ -14,7 +14,7 @@
 #include<string.h>
 
 // DEFINE O TAMANHO DAS STRINGS 
-#define tam 50
+#define tam 6
 
 // PROTOTIPO DAS FUNÇÕES 
 int menu();
@@ -23,7 +23,8 @@ void npar();
 void somapar();
 void qua_impar();
 
-int v[6], vpar[6], vimpar[6];
+// VARIÁVEIS GLOBAIS
+int v[tam], vpar[tam], vimpar[tam];
 
 // FUNÇÃO PRINCIPAL
 int main()
@@ -90,7 +91,7 @@ int menu(){
 
 
 void carregar(){
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < tam; i++)
     {
         printf("Insira um valor no vetor %i: ", i);
         scanf("%i",&v[i]);
@@ -101,7 +102,7 @@ void carregar(){
 
 void npar(){
     printf("Os números pares são:\n");
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < tam; i++)
     {
         if(v[i] % 2 == 0){
         vpar[i] = v[i];
@@ -115,7 +116,7 @@ void npar(){
 
 void somapar(){
     int total = 0;
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < tam; i++)
     {
         if(v[i] % 2 == 0){
         vpar[i] = v[i];
@@ -130,7 +131,7 @@ void somapar(){
 
 void nimpar(){
     printf("Os números impares são:\n");
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < tam; i++)
     {
         if(v[i] % 2 != 0){
             vimpar[i] = v[i];
@@ -145,7 +146,7 @@ void nimpar(){
 void qua_impar(){   
     int n = 0;
 
-    for (int i = 0; i <= 6; i++)
+    for (int i = 0; i <= tam; i++)
     {
         if(v[i] % 2 != 0){
             n++;
