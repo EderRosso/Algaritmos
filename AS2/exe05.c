@@ -4,15 +4,36 @@
 
 */
 
-#include<stdio.h>
-#include<locale.h>
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <string.h>
 
-
-int main(){
+int main()
+{
     setlocale(LC_ALL, "Portuguese");
 
+    int tam = 0;
+    int fones[tam];
+    char nomes[tam][30];
+
+    printf("Insira a quantidade de contatos: ");
+    scanf("%d", &tam);
+
+    for (int i = 0; i < tam; i++)
+    {
+        printf("Insira o nome do contato: ");
+        scanf("%s",&nomes[i]);
+        printf("Insira o fone do contato: ");
+        scanf("%s",&fones[i]);
+    }
+
+    for (int i = 0; i < tam; i++)
+    {
+        printf("%s\n", nomes[i]);
+    }
+    
+    
 
     return 0;
 }
