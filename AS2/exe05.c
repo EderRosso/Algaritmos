@@ -15,7 +15,7 @@ int main()
 
     int tam = 0;
     int fones[tam];
-    char nomes[tam][30];
+    char nomes[tam][60], busca[30];
 
     printf("Insira a quantidade de contatos: ");
     scanf("%d", &tam);
@@ -23,17 +23,24 @@ int main()
     for (int i = 0; i < tam; i++)
     {
         printf("Insira o nome do contato: ");
-        scanf("%s",&nomes[i]);
+        scanf("%s", &nomes[i]);
         printf("Insira o fone do contato: ");
-        scanf("%s",&fones[i]);
+        scanf("%d", &fones[i]);
     }
+
+    printf("\nInsira O nome para busca: ");
+    scanf("%s",&busca);
 
     for (int i = 0; i < tam; i++)
     {
-        printf("%s\n", nomes[i]);
+        if (strcmp(nomes[i], busca) == 0)
+        {
+            printf("Econtrou: %s\n", nomes[i]);
+        }
+
     }
-    
-    
+
+    // printf("\n%d\n", fones[1]);
 
     return 0;
 }
