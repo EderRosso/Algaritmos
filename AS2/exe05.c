@@ -8,39 +8,45 @@
 #include <locale.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-
-    int tam = 0;
-    int fones[tam];
-    char nomes[tam][60], busca[30];
-
+    bool flag = false;
+    int m = 0;
+    int fones[50];
+    char nomes[50][60], busca[30];
     printf("Insira a quantidade de contatos: ");
-    scanf("%d", &tam);
+    scanf("%d", &m);
+    fflush(stdin);
 
-    for (int i = 0; i < tam; i++)
+    for (int i = 0; i < m; i++)
     {
-        printf("Insira o nome do contato: ");
-        scanf("%s", &nomes[i]);
-        printf("Insira o fone do contato: ");
+        printf("Digite o nome %d: ",i+1);
+        scanf("%s", nomes[i]);
+        printf("Digite o Telefone %d: ",i+1);
         scanf("%d", &fones[i]);
     }
 
-    printf("\nInsira O nome para busca: ");
-    scanf("%s",&busca);
+    printf("\nInsira o contato para busca: ");
+    scanf("%s", busca);
 
-    for (int i = 0; i < tam; i++)
+    fflush(stdin);
+
+    for (int i = 0; i < m; i++)
     {
-        if (strcmp(nomes[i], busca) == 0)
+        if (strcmp(busca, nomes[i]) == 0)
         {
-            printf("Econtrou: %s\n", nomes[i]);
+            printf("\nEncontrou - %d \n", fones[i]);
+            flag = true;
         }
-
     }
-
-    // printf("\n%d\n", fones[1]);
+    fflush(stdin);
+    if (flag == false)
+    {
+        printf("\nContato não existe!!!\n");
+    }
 
     return 0;
 }
